@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\RoleResource\Pages;
+namespace App\Filament\Resources\UserResource\Pages;
 
-use App\Filament\Resources\RoleResource;
+use App\Filament\Resources\UserResource;
 use Filament\Pages\Actions;
 use Filament\Resources\Pages\CreateRecord;
 
-class CreateRole extends CreateRecord
+class CreateUser extends CreateRecord
 {
-    protected static string $resource = RoleResource::class;
+    protected static string $resource = UserResource::class;
     protected function getRedirectUrl(): string
     {
         return $this->getResource()::getUrl('index');
